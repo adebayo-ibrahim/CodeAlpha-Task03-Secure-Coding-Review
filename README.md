@@ -88,7 +88,7 @@ These screenshots were taken in Google Colab, running the same files that are in
 
 `VULNERABLE` means the attack worked, `safe` means the app stopped it.
 
-![Output of test_security.py: every attack works on vulnerable_app.py, none works on secure_app.py](screenshot_1_test_security.jpg)
+![Output of test_security.py: every attack works on vulnerable_app.py, none works on secure_app.py](test_security.png)
 
 <details>
 <summary>The same output as text</summary>
@@ -126,13 +126,13 @@ Result: every attack works on vulnerable_app.py, none works on secure_app.py, no
 
 ### Bandit scan of `vulnerable_app.py`
 
-![Bandit 1.9.4 report for vulnerable_app.py](screenshot_2_bandit_vulnerable_app.jpg)
+![Bandit 1.9.4 report for vulnerable_app.py](vulnerable_app.png)
 
 Bandit reports several issues. The screenshot shows the top of the report: the pickle and subprocess imports (B403, B404), the two hard-coded secrets (B105), the weak MD5 hash (B324) and string-built SQL (B608). Run `bandit vulnerable_app.py` to see the whole report.
 
 ### Bandit scan of `secure_app.py`
 
-![Bandit 1.9.4 report for secure_app.py: no issues identified](screenshot_3_bandit_secure_app.jpg)
+![Bandit 1.9.4 report for secure_app.py: no issues identified](secure_app.png)
 
 Bandit finds no issues in the fixed version. Two lines are marked `# nosec` on purpose, and section 5 of the report explains why.
 
