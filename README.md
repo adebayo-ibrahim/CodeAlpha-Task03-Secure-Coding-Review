@@ -1,10 +1,23 @@
 # NoteVault Secure Coding Review (Python / Flask)
 
-CodeAlpha Cyber Security Internship, Task 3.
+**CodeAlpha Cyber Security Internship, Task 3.**
 
+## 📌 Project Overview
 A secure code review of a small Flask web app. The vulnerabilities are found with static analysis (Bandit) and manual review, proved with real attacks, fixed, and written up in a report.
 
 > **Warning.** `vulnerable_app.py` is insecure on purpose. Run it only on your own computer, for a short time, and never put it on a network or the internet. It listens on all network interfaces (finding F10), so stop it with Ctrl+C when you are done.
+
+## 🎯Objectives
+
+- elect a programming language and application to audit.
+
+- Perform a code review to identify security vulnerabilities.
+
+- Use tools like static analyzers or manual inspection methods.
+
+- Provide recommendations and best practices for secure coding.
+
+- Document findings and suggest remediation steps for safer code.
 
 NoteVault was written for this exercise, with common real-world mistakes added on purpose.
 
@@ -129,3 +142,16 @@ Bandit finds no issues in the fixed version. Two lines are marked `# nosec` on p
 - Check permissions on the server for every request. Do not trust data that comes from the client.
 - Keep secrets out of the code and hash passwords with a slow, salted algorithm.
 - A scanner like Bandit is a good start, but 5 of the 12 problems were only found by reading the code and testing it.
+
+# 👤 Author
+
+**ADEBAYO IBRAHIM**\
+Cybersecurity Professional
+
+LinkedIn: [www.linkedin.com/in/ibrahim-adebayo-118613449](www.linkedin.com/in/ibrahim-adebayo-118613449/)
+
+---
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at CodeAlpha | **Task 03** Secure Code Review | **Repository:** GitHub
